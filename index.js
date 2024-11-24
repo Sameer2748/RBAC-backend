@@ -11,7 +11,7 @@ app.use(cors());
 
 connectDB()
 app.get("/", (req,res)=>{
-    res.json({"msg":"hey sameer"})
+    return res.json({"msg":"hey sameer"})
 })
 
 app.use('/api/v1/user', userRoutes)
